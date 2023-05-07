@@ -62,17 +62,29 @@ function render(variables = {}) {
                   </a>
                 </li>
                 <li>
-                  <a href="${variables.github ? variables.github : "#"}">
+                  <a href="${
+                    variables.github
+                      ? `https://github.com/${variables.github}`
+                      : "https://github.com"
+                  }">
                     <i class="fab fa-github"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="${variables.linkedin ? variables.linkedin : "#"}">
+                  <a href="${
+                    variables.linkedin
+                      ? `https://linkedin.com/${variables.linkedin}`
+                      : "https://linkedin.com"
+                  }">
                     <i class="fab fa-linkedin"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="${variables.instagram ? variables.instagram : "#"}">
+                  <a href="${
+                    variables.instagram
+                      ? `https://instagram.com/${variables.instagram}`
+                      : "https://instagram.com"
+                  }"">
                     <i class="fab fa-instagram"></i>
                   </a>
                 </li>
