@@ -52,18 +52,30 @@ function render(variables = {}) {
                   }">
 
 
-            <li><a href=${
-              variables.twitter ? variables.twitter : "null"
-            }><i class="fab fa-twitter"></i></a></li>
-            <li><a href=${
-              variables.github ? variables.github : "null"
-            }><i class="fab fa-github"></i></a></li>
-            <li><a href=${
-              variables.linkedin ? variables.linkedin : "null"
-            }><i class="fab fa-linkedin"></i></a></li>
-            <li><a href=${
-              variables.instagram ? variables.instagram : "null"
-            }><i class="fab fa-instagram"></i></a></li>
+                  <li>
+                  <a href="${
+                    variables.twitter
+                      ? `https://twitter.com/${variables.twitter}`
+                      : "https://twitter.com"
+                  }">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="${variables.github ? variables.github : "#"}">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="${variables.linkedin ? variables.linkedin : "#"}">
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="${variables.instagram ? variables.instagram : "#"}">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </li>
           </ul>
 
 
